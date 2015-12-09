@@ -6,7 +6,7 @@ import time, os
 #host="messagesight.demos.ibm.com"
 host="pi-one.local"
 port=1883
-queue="prueba/123"
+queue="pi-one/sensor"
 interval=60
 #Init bus
 bus = smbus.SMBus(1)
@@ -85,6 +85,10 @@ client.on_disconnnect = on_disconnect
 #connect
 x = client.connect(host, port, 60)
 client.loop_start()
-while True :
-      ReadValuesPublish()
-      time.sleep(interval)
+try :
+   while True :
+         ReadValuesPublish()
+         time.sleep(interval)
+except KeyboardInterrupt:
+   print("Interrupted")
+   client.loop_stop()
