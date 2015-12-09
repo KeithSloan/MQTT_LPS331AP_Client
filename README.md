@@ -35,7 +35,7 @@ Once you can see the I2C device at 5d you can check the sensor is working by run
 
 ## MQTT installationm
 
-For MQTT you need to install mosquitto which can be done by following the [instructions](http://mosquitto.org/2013/01/mosquitto-debian-repository/)
+For MQTT you need to install mosquitto which can be done by following these [instructions](http://mosquitto.org/2013/01/mosquitto-debian-repository/)
 
 ### Paho Client Library
 
