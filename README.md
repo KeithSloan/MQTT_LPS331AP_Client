@@ -39,7 +39,7 @@ The client uses Paho, a Python MQTT client library.
 
 Begin by installing the latest version of Paho on the Pi:
 
-*sudo pip-3.2 install paho-mqtt*
+*sudo pip install paho-mqtt*
 
 Before running the clint it is suggested that you edit mqtt_client.py
 
@@ -60,3 +60,6 @@ The following json can be pasted into Node-red for simple testing
 [{"id":"b0402dd5.87c808","type":"mqtt-broker","z":"59eed34b.dc0c04","broker":"localhost","port":"1883","clientid":"","usetls":false,"verifyservercert":true,"compatmode":true,"keepalive":"15","cleansession":true,"willTopic":"","willQos":"0","willRetain":null,"willPayload":"","birthTopic":"","birthQos":"0","birthRetain":null,"birthPayload":""},{"id":"265015c6.dd75da","type":"mqtt in","z":"59eed34b.dc0c04","name":"Sensor Queue","topic":"pi-one/sensor","broker":"b0402dd5.87c808","x":89,"y":419,"wires":[["d19ef67d.535c3"]]},{"id":"d19ef67d.535c3","type":"debug","z":"59eed34b.dc0c04","name":"","active":true,"console":"false","complete":"payload","x":349,"y":445,"wires":[]}
 ]
 ...
+
+### Feedback
+Constructive feedback to keith@sloan-hoem.co.uk
