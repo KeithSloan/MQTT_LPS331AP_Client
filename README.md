@@ -43,7 +43,7 @@ The client uses Paho, a Python MQTT client library.
 
 Begin by installing the latest version of Paho on the Pi:
 
-*sudo pip install paho-mqtt*
+**sudo pip install paho-mqtt**
 
 
 ### Running mqtt client
@@ -57,7 +57,7 @@ and change the values at the start of file to your requirements
 
 to run the client
 
-python mqtt_client.py
+**python mqtt_client.py**
 
 ### Testing with node-red
 
