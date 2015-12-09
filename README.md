@@ -1,9 +1,9 @@
 # MQTT_LPS331AP_Client
 MQTT Client for LPS331AP sensor as in MikroElectronika Pressure Click
 
-# Hardware Used
+## Hardware Used
 I went for the 2-way shield but there is a single shield availabe`
-### Hardware used
+
 * Raspberry Pi B+ ( But should work on 2B)
 * [pi2-shield](http://www.mikroe.com/click/pi2-shield/)
 * [pressure click](http://www.mikroe.com/click/pressure/)
@@ -20,7 +20,7 @@ From directory /home/pi issue command
 
 **git clone https://github.com/KeithSloan/MQTT_LPS331AP_Client.git**
 
-## Setting up I2C
+### Setting up I2C
 I2C must be enabled on the Raspberry Pi - 
 see [Setting up I2C](http://www.raspberrypi-spy.co.uk/2014/11/enabling-the-i2c-interface-on-the-raspberry-pi)
 
@@ -33,7 +33,7 @@ Once you can see the I2C device at 5d you can check the sensor is working by run
 
 **python /home/pi/MQTT_LPS331AP_Client/ReadSensor.py**
 
-## MQTT installationm
+### MQTT installation
 
 For MQTT you need to install mosquitto which can be done by following these [instructions](http://mosquitto.org/2013/01/mosquitto-debian-repository/)
 
@@ -46,7 +46,7 @@ Begin by installing the latest version of Paho on the Pi:
 *sudo pip install paho-mqtt*
 
 
-## Running mqtt client
+### Running mqtt client
 
 Before running the clint it is suggested that you edit mqtt_client.py
 
