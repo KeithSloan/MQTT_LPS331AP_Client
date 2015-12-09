@@ -33,13 +33,20 @@ Once you can see the I2C device at 5d you can check the sensor is working by run
 
 **python /home/pi/MQTT_LPS331AP_Client/ReadSensor.py**
 
+## MQTT installationm
+
 For MQTT you need to install mosquitto which can be done by following the [instructions](http://mosquitto.org/2013/01/mosquitto-debian-repository/)
+
+### Paho Client Library
 
 The client uses Paho, a Python MQTT client library.
 
 Begin by installing the latest version of Paho on the Pi:
 
 *sudo pip install paho-mqtt*
+
+
+## Running mqtt client
 
 Before running the clint it is suggested that you edit mqtt_client.py
 
