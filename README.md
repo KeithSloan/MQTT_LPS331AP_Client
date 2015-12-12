@@ -69,4 +69,4 @@ The following json can be pasted into Node-red for simple testing
 ```
 
 ### Feedback
-Constructive feedback to keith@sloan-hoem.co.uk
+Constructive feedback to keith@sloan-home.co.uk
