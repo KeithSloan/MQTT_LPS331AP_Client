@@ -51,9 +51,10 @@ Begin by installing the latest version of Paho on the Pi:
 Before running the clint it is suggested that you edit mqtt_client.py
 
 and change the values at the start of file to your requirements
-1.host
-2.queue
-3.interval
+
+1. host
+2. queue
+3. interval
 
 to run the client
 
