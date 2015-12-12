@@ -62,7 +62,7 @@ to run the client
 ### Testing with node-red
 
 The following json can be pasted into Node-red for simple testing.
-i.e. 
+ 
 1. Copy and paste the code to the clipboard.
 2. In node-red press cntrl-i
 3. paste code.
