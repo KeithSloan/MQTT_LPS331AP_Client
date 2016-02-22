@@ -48,12 +48,12 @@ Begin by installing the latest version of Paho on the Pi:
 
 ### Running mqtt client
 
-Before running the clint it is suggested that you edit mqtt_client.py
-
+Before running the client it is suggested that you edit mqtt_client.py
 and change the values at the start of file to your requirements
-1.host
-2.queue
-3.interval
+
+1. host
+2. queue
+3. interval
 
 to run the client
 
@@ -61,12 +61,16 @@ to run the client
 
 ### Testing with node-red
 
-The following json can be pasted into Node-red for simple testing
+The following json can be pasted into Node-red for simple testing.
+ 
+1. Copy and paste the code to the clipboard.
+2. In node-red press cntrl-i
+3. paste code.
 
-...javascript
+```javascript
 [{"id":"b0402dd5.87c808","type":"mqtt-broker","z":"59eed34b.dc0c04","broker":"localhost","port":"1883","clientid":"","usetls":false,"verifyservercert":true,"compatmode":true,"keepalive":"15","cleansession":true,"willTopic":"","willQos":"0","willRetain":null,"willPayload":"","birthTopic":"","birthQos":"0","birthRetain":null,"birthPayload":""},{"id":"265015c6.dd75da","type":"mqtt in","z":"59eed34b.dc0c04","name":"Sensor Queue","topic":"pi-one/sensor","broker":"b0402dd5.87c808","x":89,"y":419,"wires":[["d19ef67d.535c3"]]},{"id":"d19ef67d.535c3","type":"debug","z":"59eed34b.dc0c04","name":"","active":true,"console":"false","complete":"payload","x":349,"y":445,"wires":[]}
 ]
-...
+```
 
 ### Feedback
-Constructive feedback to keith@sloan-hoem.co.uk
+Constructive feedback to keith@sloan-home.co.uk
