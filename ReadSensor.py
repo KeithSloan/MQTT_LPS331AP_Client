@@ -3,8 +3,8 @@ import smbus
 #init bus
 bus = smbus.SMBus(1)
 
-# power up LPS331AP pressure sensor
-bus.write_byte_data(0x5d, 0x20, 0b10000000)
+# power up LPS331AP pressure sensor & set BDU bit
+bus.write_byte_data(0x5d, 0x20, 0b10000100)
 
 #write value 0b1 to register 0x21 on device at address 0x5d
 bus.write_byte_data(0x5d,0x21, 0b1)

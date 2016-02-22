@@ -12,8 +12,8 @@ interval=60
 bus = smbus.SMBus(1)
 
 def InitSensor():
-    # power up LPS331AP pressure sensor
-    bus.write_byte_data(0x5d, 0x20, 0b10000000)
+    # power up LPS331AP pressure sensor & set BDU bit
+    bus.write_byte_data(0x5d, 0x20, 0b10000100)
 
 def GetTemperature() :
     Temp_LSB = bus.read_byte_data(0x5d, 0x2b)
